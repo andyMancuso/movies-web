@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    height: 70px;
+    width: 100vh;
+    border: 2px solid yellow;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.hero {
+    width: 100%;
+}
+
