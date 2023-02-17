@@ -1,20 +1,28 @@
+import {
+  Section,
+  Header,
+  Button,
+    Hero 
+} from "../../components";
 
-import { Header } from '../../components'
-import { Button } from '../../components'
-
-
-import styles from './styles.module.css'
+import styles from "./styles.module.css";
 
 const Home = () => {
-    return (
-    <>
-      <div className={styles.header}><Header></Header></div>
-      <div>Componentes</div>
-      <div>Componentes</div>
-      <div>Componentes</div>
-      <div>Componentes</div>
-    </>
-    )
-  }
-  
-  export default Home
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <Section>
+        <Header />
+        <Hero />
+      </Section>
+      <Section>Section2</Section>
+      <Section>Section3</Section>
+    </div>
+  );
+};
+
+export default Home;

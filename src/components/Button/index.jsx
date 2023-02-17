@@ -1,7 +1,12 @@
 
-const Button = () => {
+const Button = ({children}) => {
     return (
-      <div>Button</div>
+      <button style={{
+        borderRadius: '8px',
+        border: 'none',
+        padding: '10px 20px',
+
+      }}>{children}</button>
     )
   }
   
