@@ -6,7 +6,8 @@ const Info = () => {
   return (
     <div className={styles.container}>
       <div className={styles.tags}>
-      <Tags>Adventure</Tags>
+      <Tags>Action</Tags>
+      <Tags>Action</Tags>
       </div>
       <Title></Title>
       <Actions></Actions>

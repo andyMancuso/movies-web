@@ -1,6 +1,5 @@
 import {
   Info,
-  Tags,
   Title,
   Actions,
   MetaData,

@@ -1,7 +1,9 @@
 
+import styles from './styles.module.css'
+
 const Tags = ({children}) => {
   return (  
-      <div className="rojo">{children}</div>  
+      <div className={styles.container}>{children}</div>  
       )
 }
 
