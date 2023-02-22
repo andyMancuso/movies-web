@@ -1,6 +1,5 @@
 export { default as Actions } from './Actions'
 export { default as Cover } from './Cover'
-export { default as Info } from './Info'
 export { default as MetaData } from './MetaData'
 export { default as Tags } from './Tags'
 export { default as Title } from './Title'

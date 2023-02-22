@@ -1,8 +1,13 @@
+import styles from "./styles.module.css";
 
-const Title = () => {
+const Title = ({ title, year }) => {
   return (
-    <div>Title</div>
-  )
-}
+    <div className={styles.container}>
+      <h1>
+        {title} <span>{year}</span>
+      </h1>
+    </div>
+  );
+};
 
-export default Title
+export default Title;

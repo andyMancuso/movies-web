@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  border: 2px solid pink;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  color: rgb(19, 205, 202);
+  font-size: 12px;
+}
