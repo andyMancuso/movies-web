@@ -4,14 +4,21 @@
   width: 100%;
   align-items: center;
   gap: 20px;
+  text-transform: uppercase;
 }
 
 .buttons {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 5px;
   padding: 10px;
   color: rgb(19, 205, 202);
   font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    gap: 0px;
+  }
 }

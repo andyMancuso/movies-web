@@ -9,15 +9,15 @@ const Actions = () => {
     <div className={styles.container}>
       <div className={styles.buttons}>
         <img height='35px' width='35px' src={playButton}/>
-        <h4>WATCH TRAILER</h4>
+        <h4>watch trailer</h4>
       </div>
       <div className={styles.buttons}>
         <img height='40px' width='40px' src={favButton}/>
-        <h4>ADD FAVORITE</h4>
+        <h4>add favorite</h4>
       </div>
       <div className={styles.buttons}>
         <img height='40px' width='40px' src={shareButton}/>
-        <h4>SHARE</h4>
+        <h4>share</h4>
       </div>
     </div>
   )

@@ -1,5 +1,6 @@
 import Button from "../Button";
-import streamiaIMG from './streamia-logo.png'
+// import streamiaIMG from './streamia-logo.png'
+import streamiaIMG from './streamed2.png'
 
 import styles from "./styles.module.css";
 
@@ -7,9 +8,7 @@ const Header = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
-        <img style={{
-          objectFit: 'contain'
-        }} width='100%'  src={streamiaIMG} />
+        <img className={styles.img} width='100%'  src={streamiaIMG} />
       </div>
       <div className={styles.navigation}>
         <nav>
