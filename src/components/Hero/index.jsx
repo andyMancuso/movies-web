@@ -46,7 +46,9 @@ const Hero = () => {
             rated={movie.rated}
             release={releaseCalc(movie.release)}
             />
-            <Button>PLAY</Button>
+            <span className={styles.playbtn}>
+             <Button>PLAY</Button>
+            </span>
         </div>
         <Cover src={movie.cover} />
       </div>

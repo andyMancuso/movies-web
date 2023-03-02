@@ -4,7 +4,7 @@ const Title = ({ title, year }) => {
   return (
     <div className={styles.container}>
       <h1>
-        {title} <span>{year}</span>
+        {title} <span className={styles.year}>{year}</span>
       </h1>
     </div>
   );

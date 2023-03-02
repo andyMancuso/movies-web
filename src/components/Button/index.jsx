@@ -1,13 +1,10 @@
 
+import styles from "./styles.module.css"
+
 const Button = ({children}) => {
     return (
       <div>
-        <button style={{
-          borderRadius: '8px',
-          border: 'none',
-          padding: '10px 20px',
-  
-        }}>{children}</button>
+        <button className={styles.container}>{children}</button>
       </div>
     )
   }

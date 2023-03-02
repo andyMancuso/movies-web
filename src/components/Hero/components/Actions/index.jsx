@@ -8,7 +8,7 @@ const Actions = () => {
   return (
     <div className={styles.container}>
       <div className={styles.buttons}>
-        <img height='35px' width='35px' src={playButton}/>
+        <img height='40px' width='40px' src={playButton}/>
         <h4>watch trailer</h4>
       </div>
       <div className={styles.buttons}>

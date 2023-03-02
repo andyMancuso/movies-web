@@ -9,7 +9,6 @@ const MetaData = ({stars, duration, rated, release}) => {
       <span className={styles.img}>
           <img height='25px' width='25px' src={starIMG} />
         {stars}/10
-
       </span>
           <li>
         Run time: {duration}
