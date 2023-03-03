@@ -7,6 +7,6 @@ export const MOVIES = [
     duration: 143,
     stars: 7.4,
     rated: 'PG-13',
-    release: '2015-05-01'
+    release: '2015-05-01T00:00:00'
   }
 ]

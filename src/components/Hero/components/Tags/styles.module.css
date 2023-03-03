@@ -4,18 +4,17 @@
   gap: 5px;
 }
 
-.tag {
+.orange {
   display: flex;
-  height: 26px;
-  width: 52px;
+  padding: 5px 8px 5px 8px;
   background-color: orange;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 0.9rem;
   text-transform: uppercase;
 }
-.multitag {
+.red {
   display: flex;
   /* height: 32px; */
   padding: 5px 8px 5px 8px;
@@ -23,7 +22,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 0.9rem;
   text-transform: uppercase;
   border: none;
 
@@ -31,7 +30,7 @@
 
 @media screen and (max-width: 1000px) {
   .multitag {
-    font-size: 14px;
+    font-size: .875rem;
   }
 
 }

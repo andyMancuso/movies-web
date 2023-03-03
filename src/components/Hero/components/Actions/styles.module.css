@@ -24,9 +24,9 @@
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
-    gap: 0px;
+    gap: 0;
   }
   .buttons {
-    font-size: 15px;
+    font-size: 14px;
   }
 }

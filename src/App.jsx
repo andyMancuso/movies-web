@@ -1,13 +1,21 @@
-import styles from './App.module.css'
+
 import { Home } from './pages'
+import {
+  BrowserRouter,
+  Link,
+  Route,
+  Routes,
+} from "react-router-dom";
 
 function App() {
 
 
   return (
-    <div className={styles}>
-    <Home>ads</Home>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home />} />
+    </Routes>
+    </BrowserRouter>
   )
 }
 
