@@ -1,7 +1,7 @@
 .container {
   display: flex;
   width: 100%;
-  gap: 5px;
+  gap: 5px;  
 }
 
 .orange {
@@ -13,10 +13,10 @@
   border-radius: 5px;
   font-size: 0.9rem;
   text-transform: uppercase;
+  border: none;
 }
 .red {
   display: flex;
-  /* height: 32px; */
   padding: 5px 8px 5px 8px;
   background-color: #db2b42;
   justify-content: center;
@@ -29,8 +29,22 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .multitag {
+  .orange{
+    font-size: .875rem;
+  }
+  .red{
     font-size: .875rem;
   }
 
 }
+
+@media screen and (max-width: 600px) {
+  .orange{
+    font-size: 0.7rem;
+  }
+  .red{
+    font-size: 0.7rem;
+  }
+
+}
+

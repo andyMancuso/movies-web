@@ -1,19 +1,22 @@
 .container {
   display: flex;
-  border: 2px solid pink;
   width: 100%;
-  align-items: center;
   gap: 20px;
   text-transform: uppercase;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .buttons {
+  background-color: rgba(200, 0, 0, 0.2);
+  border-radius: 16px;
+  width: fit-content;
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 10px;
+  gap: 10px;
+  padding: 8px;
   color: white;
-  font-size: 19px;
+  font-size: 1.188rem;
   text-shadow:
   -1px -1px 0 #000,
   1px -1px 0 #000,
@@ -23,10 +26,24 @@
 
 @media screen and (max-width: 600px) {
   .container {
-    flex-direction: column;
-    gap: 0;
+    /* flex-direction: column; */
+    gap: 10px;
+    margin-top: 10px;
   }
   .buttons {
-    font-size: 14px;
+    font-size: .875rem;
   }
+
+  @media screen and (max-width: 440px) {
+    .container {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+      align-items: center;
+    }
+    .buttons {
+      font-size: .775rem;
+    }
+  }
+
 }

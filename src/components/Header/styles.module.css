@@ -11,6 +11,8 @@
   width: 100%;
   top: 0;
   z-index: 100;
+  /* border: 2px solid purple; */
+  justify-content: space-between;
 }
 
 .linkLogo {
@@ -30,9 +32,91 @@
   width: 100%;
   object-fit: contain;
 }
-
+/* 
 .navigation {
   display: flex;
   flex-grow: 1;
   gap: 20px;
+} */
+
+.right {
+  /* border: 10px solid #fa8072; */
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
+
+.burgerMenu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.lines {
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: white;
+}
+
+.navMenu {
+  /* position: absolute; */
+  /* left: 0; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  gap: 20px;
+  /* border: 5px solid springgreen; */
+  /* margin: 0; */
+  /* padding: 0; */
+}
+
+@media screen and (max-width: 600px) {
+  .navMenu {
+    /* flex-direction: column; */
+    font-size: 0.9rem;
+    /* white-space: nowrap; */
+    /* flex-direction: column; */
+    /* gap: 0; */
+  }
+  button {
+    font-size: .8rem;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .navMenu {
+    font-size: 0.7rem;
+    white-space: nowrap;
+    /* flex-direction: column; */
+    /* gap: 0; */
+  }
+  button {
+    font-size: .7rem;
+    white-space: normal;
+  }
+  .right {
+    gap: 12px;
+  }
+  .container{
+    /* justify-content: space-evenly; */
+    gap: 15px;
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+  .navMenu {
+    font-size: 0.7rem;
+    white-space: nowrap;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+
+

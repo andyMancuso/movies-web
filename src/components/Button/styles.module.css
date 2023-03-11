@@ -4,3 +4,18 @@
     padding: 10px 20px;
     white-space: nowrap;
 }
+
+
+@media screen and (max-width: 600px) {
+    .container{
+        padding: 10px 5px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container{
+        padding: 10px 5px;
+        white-space: normal;
+    }
+}
+

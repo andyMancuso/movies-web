@@ -4,7 +4,7 @@ const Cover = ({src}) => {
   return (
     <div className={styles.container}>
       <img style={{
-        border: '3px solid orange'
+        border: '3px solid white'
       }}height='100%' width='100%' src={src} />
     </div>
   )

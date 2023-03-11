@@ -1,8 +1,8 @@
 import {
   Section,
   Header,
-  Button,
-    Hero 
+  Discover,
+  Hero 
 } from "../../components";
 
 import styles from "./styles.module.css";
@@ -19,7 +19,9 @@ const Home = () => {
         <Header />
         <Hero />
       </Section>
-      <Section>Section2</Section>
+      <Section>
+        <Discover />
+      </Section>
       <Section>Section3</Section>
     </div>
   );
