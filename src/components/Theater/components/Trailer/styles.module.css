@@ -1,0 +1,31 @@
+.trailerContainer{
+    display: flex;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: rgba(219, 43, 66, 0.3);
+    width: 100%;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: 15px;
+}
+
+.trailerData {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.trailerIMG {
+    display: flex;
+    height: 100px;
+    width: 120px;
+    object-fit: contain;
+}
+
+.trailerTitle {
+
+}
+
+.trailerDuration{
+    
+}
