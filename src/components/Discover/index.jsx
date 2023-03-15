@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { MOVIES } from "../../config/constants";
 import Button from "../Button";
 import Card from "./components/Card";
+import { SlMagnifier } from 'react-icons/sl'
 
 import styles from "./styles.module.css";
 
@@ -17,16 +18,18 @@ const Discover = () => {
           <Link to="/popular">Popular</Link>
           <Link to="/recent">Recent</Link>
         </nav>
-        <div className={styles.searchBar}>
-          <img src="" />
-          <input placeholder="Enter a movie name"></input>
-        </div>
+        <label htmlFor="search" className={styles.searchBar}>
+           <span className={styles.searchIcon}>
+            <SlMagnifier />
+          </span>
+          <input id='search' placeholder="Enter a movie name" />
+        </label>
       </div>
 
       <div className={styles.content}>
         {movie.map((item) => {
           return (
-            // <div className={styles.card}>
+            <div className={styles.card}>
             <Card
               title={item.title}
               img={item.cover}
@@ -34,7 +37,7 @@ const Discover = () => {
               year={item.release}
               tags={item.categories}
             />
-            // </div>
+             </div>
           );
         })}
       </div>

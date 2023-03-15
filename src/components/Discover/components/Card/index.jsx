@@ -1,5 +1,7 @@
 import styles from "./styles.module.css";
 
+import { BsStarFill } from 'react-icons/bs'
+
 import { yearCalc} from '../../../../utils/dates'
 
 const Card = ({title, year, img, stars, tags  }) => {
@@ -7,10 +9,13 @@ const Card = ({title, year, img, stars, tags  }) => {
     <div className={styles.container}>
       <img src={img} alt='cover'/>
       <div className={styles.stars}>
+        <span>
+          <BsStarFill  />
+        </span>
         {stars}
       </div>
         <span className={styles.metaData}>
-          {yearCalc(year)} / {tags}
+          {yearCalc(year)} / {tags.join(', ')}
         </span>
         <span className={styles.title}>
           {title}
@@ -21,4 +26,4 @@ const Card = ({title, year, img, stars, tags  }) => {
 
 export default Card;
 
-// Estilar card como componente y luego el container dentro del discover
+// react-icons

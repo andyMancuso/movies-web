@@ -2,7 +2,8 @@ import {
   Section,
   Header,
   Discover,
-  Hero 
+  Hero,
+  Theater
 } from "../../components";
 
 import styles from "./styles.module.css";
@@ -22,7 +23,9 @@ const Home = () => {
       <Section>
         <Discover />
       </Section>
-      <Section>Section3</Section>
+      <Section>
+        <Theater />          
+      </Section>
     </div>
   );
 };

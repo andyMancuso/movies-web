@@ -1,0 +1,94 @@
+/* .container {
+    display: flex;
+    width: 100%;
+    border: 2px solid yellow;
+    justify-content: space-between;
+} */
+
+h2 {
+    text-transform: uppercase;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    max-width: 1800px;
+    border: 2px solid blue;
+    margin: 0 auto;
+}
+
+.leftContent {
+    display: flex;
+    /* justify-content: center; */
+    border: 2px solid red;
+    width: 75%;
+    max-width: 1400px;
+    /* margin-top: 200px; */
+}
+
+.videoPlayer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border: 1px solid violet;
+}
+
+.trailerList {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+
+}
+
+.trailerContainer{
+    display: flex;
+    border: 3px solid white;
+    width: 100%;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: 15px;
+}
+
+.trailerIMG {
+    display: flex;
+    height: 150px;
+}
+
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    max-width: 300px;
+    /* margin-top: 200px; */
+    border: 2px solid yellow;
+}
+
+.actorList {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid turquoise;
+}
+
+.actor {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.actorIMG {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    border: 2px solid purple;
+}
+
+.actorName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid royalblue; */
+}

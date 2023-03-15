@@ -4,21 +4,34 @@
   /* background-color: antiquewhite; */
   width: 100%;
   max-width: 200px;
-  /* height: 200px; */
-  /* border: 2px solid red; */
-  margin-right: 60px;
-  margin-left: 60px;
-  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  /* background: rgba(0, 0, 0, 0.3); */
+  /* border-radius: 10px; */
+  padding: 5px;
 }
 
-/* .container img {
+.container::before {
+  content: '';
   height: 100%;
   width: 100%;
-  object-fit: contain;
-} */
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
 
 .container img {
   border-radius: 10px;
+  /* border: 3px solid peru; */
+  width: 100%;
+  /* object-fit: cover; */
+  max-height: 290px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
 }
 
 .stars {
@@ -28,15 +41,39 @@
   width: 100%;
   max-width: fit-content;
   border-radius: 10px;
-  padding: 0 10px 0 10px;
-  margin-top: -20px;
-  margin-left: 175px; 
+  padding: 2px 6px 0 6px;
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.9rem;
+  box-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
 }
+
 
 .metaData {
   color: #db2b42;
+  margin-top: 8px;
+  text-transform: capitalize;
+  font-size: .9rem;
+  position: relative;
+  /* white-space: nowrap; */
 }
 
 .title {
-  font-size: 1.2rem;
+  margin-top: 3px;
+  font-size: 1.4rem;
+  position: relative;
 }
+
+  
+  @media screen and (max-width: 700px) {
+    .title {
+      font-size: .8rem;
+    }
+  }

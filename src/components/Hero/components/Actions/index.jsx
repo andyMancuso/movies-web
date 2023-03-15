@@ -1,22 +1,20 @@
-import playButton from './assets/play-button.png'
-import favButton from './assets/favourite-button.png'
-import shareButton from './assets/share-button.png'
+import {BsFillPlayFill, BsStarFill, BsShareFill } from 'react-icons/bs'
 
 import styles from './styles.module.css'
 
 const Actions = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.buttons}>
-        <img height='40px' width='40px' src={playButton}/>
+      <div className={styles.buttons}> 
+      <BsFillPlayFill size={25}/>
         <h4>watch trailer</h4>
       </div>
       <div className={styles.buttons}>
-        <img height='40px' width='40px' src={favButton}/>
+      <BsStarFill />
         <h4>add favorite</h4>
       </div>
       <div className={styles.buttons}>
-        <img height='40px' width='40px' src={shareButton}/>
+      <BsShareFill />
         <h4>share</h4>
       </div>
     </div>

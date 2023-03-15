@@ -1,20 +1,73 @@
 h3 {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
+}
+
+@media screen and (max-width: 700px) {
+  h3 {
+    font-size: 1.6rem;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h3 {
+    font-size: 1.4rem;
+    white-space: normal;
+  }
 }
 
 .container {
   min-height: 100%;
   /* background-image: url("../../assets/bg-hero.jpg"); */
-  background-color: #080421a4;
+  background-color: #2f043ea4;
   background-size: cover;
   width: 100%;
   position: relative;
   /* border: 10px solid orange; */
 }
 
+.content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  flex-wrap: wrap;
+  width: 95%;
+  max-width: 1800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  /* border: 3px solid red; */
+  row-gap: 30px;
+  /* column-gap: fill; */
+}
+
+@media screen and (max-width: 1400px) {
+  .content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
 .header {
-  border: 3px solid deeppink;
-  background-color: rgba(200, 100, 200, 0.4);
+  /* border: 3px solid deeppink; */
+  background-color: rgba(219, 43, 66, 0.3);
+  /* background-color: #db2b42; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,6 +76,13 @@ h3 {
   height: 100px;
   /* gap: 1000px; */
   padding: 0 20px;
+  gap: 50px;
+}
+
+@media screen and (max-width: 330px) {
+  .header {
+    gap: 25px;
+  }
 }
 
 
@@ -35,60 +95,61 @@ h3 {
   gap: 30px;
 }
 
+@media screen and (max-width: 700px) {
+  .navMenu {
+    flex-direction: column;
+    gap: 3px;
+  }
+}
+
 .searchBar {
   display: flex;
+  position: relative;
+}
+
+.searchIcon {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  height: 32px;
+  width: 30px;
 }
 
 input {
-  background-image: url('searchicon.png');
-  background-color: rgba(200, 100, 200, 0.4);
+  /* background-color: rgba(200, 100, 200, 0.4); */
   border: none !important;
   border-width: 0;
-  box-shadow: none;  
+  box-shadow: none;
+  height: 32px;
+  border-radius: 4px;
+  padding-left: 30px;
 }
 
-.content {
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    /* justify-content: center; */
-    flex-wrap: wrap;
-    width: 95%;
-    max-width: 1800px;
-    /* gap: 80px; */
-    margin: 0 auto;
-    margin-top: 20px; 
-    border: 3px solid purple;    
+@media screen and (max-width: 610px) {
+  input {
+    max-width: 30px;
   }
-/*   
-  @media screen and (max-width: 1000px) {
-    .content{
-      max-width: 250px;
-    }
-  } */
+}
 
-/* .card {
-  display: flex;
-  gap: 302px
-  ;
-  border: 3px solid white;
-  width: 100%;
-
-} */
+.card {
+  display: grid;
+  place-items: start center;
+}
 
 .discoverBtn {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .discoverBtn button {
   color: #fff;
   background-color: #db2b42;
-  font-size: 1rem;
-  text-shadow:
-  -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
+  font-size: 1.2rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
-
