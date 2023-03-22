@@ -66,7 +66,8 @@ h3 {
 
 .header {
   /* border: 3px solid deeppink; */
-  background-color: rgba(219, 43, 66, 0.3);
+  /* background-color: rgba(219, 43, 66, 0.3); */
+  background-color: rgba(0, 0, 0, 0.5);
   /* background-color: #db2b42; */
   display: flex;
   justify-content: space-between;

@@ -1,31 +1,87 @@
+.btnContainer {
+    display: flex;
+    flex-direction: column;
+    /* border: 4px solid turquoise; */
+    align-items: center;
+    width: 100%;
+    max-width: 330px;
+    background-color: transparent;
+    border: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .btnContainer {
+       max-width: 900px;
+    }
+  }
+
 .trailerContainer{
     display: flex;
-    border: 3px solid white;
-    border-radius: 10px;
-    background-color: rgba(219, 43, 66, 0.3);
     width: 100%;
-    /* justify-content: space-evenly; */
-    align-items: center;
-    gap: 15px;
+    max-width: 330px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgba(219, 43, 66, 0.5);
+    padding: 5px 10px 5px 10px;
+    /* border: 2px solid salmon; */
 }
+
+@media screen and (max-width: 1000px) {
+    .trailerContainer {
+       max-width: 900px;
+    }
+  }
 
 .trailerData {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    justify-content: center;
+    /* gap: 3px; */
+    /* border: 2px solid salmon; */
 }
+
+
+.trailerData h3 {
+    color: white;
+    font-size: 1.5rem;
+    text-align: start;
+}
+
+@media screen and (max-width: 1000px) {
+    .trailerData h3 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .trailerData h3 {
+        font-size: 1rem;
+    }
+}
+
+.trailerData span {
+    color: white;
+    font-size: 1rem;
+    text-align: start;
+}
+
+@media screen and (max-width: 1000px) {
+    .trailerData span {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .trailerData span {
+        font-size: 1rem;
+    }
+}
+
 
 .trailerIMG {
+    /* border: 2px solid turquoise; */
     display: flex;
     height: 100px;
-    width: 120px;
+    width: 100px;
     object-fit: contain;
-}
-
-.trailerTitle {
-
-}
-
-.trailerDuration{
-    
 }
