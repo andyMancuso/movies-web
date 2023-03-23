@@ -1,0 +1,106 @@
+.content {
+  display: flex;
+  width: 95%;
+  max-width: 1400px;
+  border: 5px solid springgreen;
+  margin: 0 auto;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 30%;
+  border: 3px solid darkorange;
+  row-gap: 40px;
+}
+
+.leftContent h2 {
+  font-size: 2.5rem;
+  /* margin-bottom: 15px; */
+}
+
+.leftContent h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+
+}
+
+.reviewersList{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid purple;
+}
+
+.fandomList{
+  display: flex;
+  flex-direction: column;
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid skyblue;
+  width: 80%;
+  gap: 30px;
+}
+
+.rightContent h1 {
+  font-size: 2rem;
+}
+
+.mainNotice {
+  display: flex;
+  /* flex-direction: column; */
+  width: 100%;
+  border: 2px solid purple;
+  align-items: center;
+  gap: 20px;
+}
+
+.mainNoticeData {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+
+.mainNotice img {
+  width: 500px;
+  height: 300px;
+}
+
+.smallNoticesContainer {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  width: 100%;
+  border: 2px solid orange;
+  /* justify-content: space-between; */
+}
+
+.smallNotice {
+  display: flex;
+  width: 100%;
+  max-width: 250px;
+  flex-direction: column;
+  border: 2px solid turquoise;
+}
+
+.smallNoticeData {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.smallNotice img {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
+

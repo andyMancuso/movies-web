@@ -1,12 +1,4 @@
-import {
-  Section,
-  Header,
-  Discover,
-  Hero,
-  Theater
-} from "../../components";
-
-import styles from "./styles.module.css";
+import { Section, Header, Discover, Hero, Theater, News } from "../../components";
 
 const Home = () => {
   return (
@@ -24,7 +16,10 @@ const Home = () => {
         <Discover />
       </Section>
       <Section>
-        <Theater />          
+        <Theater />
+      </Section>
+      <Section>
+        <News />
       </Section>
     </div>
   );

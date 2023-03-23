@@ -226,4 +226,58 @@ export const MOVIES_TRAILERS = [
 
 ]
 
+export const REVIEWERS = [
+  {
+    name: 'Edna Freeman',
+    score: '2713',
+    img: 'https://randomuser.me/api/portraits/women/65.jpg'
+  },
+  {
+    name: 'Israel Hammond',
+    score: '2678',
+    img: 'https://randomuser.me/api/portraits/men/85.jpg'
+  },
+  {
+    name: 'Evelyn Ny',
+    score: '2665',
+    img: 'https://randomuser.me/api/portraits/women/24.jpg'
+  },
+  {
+    name: 'Andre Knight',
+    score: '2643',
+    img: 'https://randomuser.me/api/portraits/men/84.jpg'
+  },
+  {
+    name: 'Riska Aulia',
+    score: '2636',
+    img: 'https://randomuser.me/api/portraits/women/86.jpg'
+  }
+]
 
+export const FANDOM = [
+  {
+    name: 'Potterheads',
+    score: '7532',
+    img: ''
+  },
+  {
+    name: 'Ringers',
+    score: '5231',
+    img: ''
+  },
+  {
+    name: 'Gladers',
+    score: '3874',
+    img: ''
+  },
+  {
+    name: 'Avatards',
+    score: '2643',
+    img: ''
+  },
+  {
+    name: 'Batmaniacs',
+    score: '2340',
+    img: ''
+  }
+]
