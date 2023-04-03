@@ -1,9 +1,12 @@
-/* .container {
+.container {
     display: flex;
+    flex-direction: column;
     width: 100%;
     border: 2px solid yellow;
-    justify-content: space-between;
-} */
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(12,15,34);
+}
 
 .theater {
     text-transform: uppercase;
@@ -16,12 +19,10 @@
     align-items: center;
     /* margin-top: 100px; */
     width: 95%;
-    max-width: 1800px;
+    max-width: 1750px;
     border: 2px solid blue;
     margin: 0 auto;
-    gap: 30px
-    ;
-    /* background-color: aqua; */
+    gap: 30px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -36,9 +37,9 @@
     display: flex;
     /* justify-content: center; */
     align-items: center;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1300px;
     gap: 20px;
     /* margin-top: 200px; */
 }
@@ -54,16 +55,16 @@
     flex-direction: column;
     /* justify-content: space-evenly; */
     width: 100%;
-    /* max-width: 800px; */
-    /* border: 1px solid violet; */
+    max-width: 800px;
+    border: 1px solid violet;
     gap: 20px;
 }
 
 .videoPlayer {
-    width: 100%;
+    /* width: 100%; */
     /* height: 100%; */
     height: 600px;
-    /* max-width: 1000px */
+    /* max-width: 600px */
 }
 
 .trailerList {
@@ -72,10 +73,11 @@
     /* justify-content: space-evenly; */
     align-items: center;
     width: 100%;
-    max-width: 330px;
+    max-width: 400px;
     /* gap: 30px; */
     row-gap: 25px;
     margin-top: 50px;
+    border: 1px solid yellow;
 }
 
 @media screen and (max-width: 1000px) {
@@ -118,7 +120,8 @@
 
 @media screen and (max-width: 1000px) {
     .actorList {
-       max-width: 900px;
+       max-width: 800px;
+
     }
   }
 

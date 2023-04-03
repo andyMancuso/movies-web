@@ -31,7 +31,7 @@ const News = () => {
       <div className={styles.rightContent}>
         <h1>news</h1>
         <div className={styles.mainNotice}>
-          <img src={movie.img} alt="" />
+          <img src={movie.cover} alt="" />
           <span className={styles.mainNoticeData}>
           <span>2 hours ago - by Yoga</span>
             'Suicide Squad' Is a Hit, But DC Needs to Start Making Better Movies
@@ -47,29 +47,30 @@ const News = () => {
             </p>
           </span>
         </div>
+        
         <div className={styles.smallNoticesContainer}>
           <div className={styles.smallNotice}>
-            <img src={movie.img} alt="" />
-            <span className={styles.smallNoticeData}>
-            <span>4 hours ago - by Yoga</span>
-              A new Rogue One trailer is coming very soon
-            </span>
+            <img src={movie.cover} alt="" />
+            <div className={styles.smallNoticeData}>
+              <span>4 hours ago - by Yoga</span>
+              <h4>A new Rogue One trailer is coming very soon</h4>
+            </div>
           </div>
 
           <div className={styles.smallNotice}>
-            <img src={movie.img} alt="" />
-            <span className={styles.smallNoticeData}>
-            <span>2 hours ago - by Yoga</span>
-              Thor: Ragnarok may feature this MCU Vehicle
-            </span>
+            <img src={movie.cover} alt="" />
+            <div className={styles.smallNoticeData}>
+              <span>2 hours ago - by Yoga</span>
+              <h4>Thor: Ragnarok may feature this MCU Vehicle</h4>
+            </div>
           </div>
 
           <div className={styles.smallNotice}>
-            <img src={movie.img} alt="" />
-            <span className={styles.smallNoticeData}>
-            <span>2 hours ago - by Yoga</span>
-              Brie Larson is already getting into character for captain marvel, check it out
-            </span>
+            <img src={movie.cover} alt="" />
+            <div className={styles.smallNoticeData}>
+              <span>2 hours ago - by Yoga</span>
+              <h4>Brie Larson is already getting into character for captain marvel, check it out</h4>
+            </div>
           </div>
           
         </div>

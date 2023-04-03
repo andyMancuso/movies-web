@@ -1,10 +1,10 @@
 
 import styles from "./styles.module.css"
 
-const Button = ({children}) => {
+const Button = ({children, onClick}) => {
     return (
       <div>
-        <button className={styles.container}>{children}</button>
+        <button onClick={onClick} className={styles.container}>{children}</button>
       </div>
     )
   }

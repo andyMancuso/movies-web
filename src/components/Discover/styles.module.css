@@ -1,39 +1,27 @@
-h3 {
-  font-size: 1.9rem;
-}
-
-@media screen and (max-width: 700px) {
-  h3 {
-    font-size: 1.6rem;
-    white-space: nowrap;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  h3 {
-    font-size: 1.4rem;
-    white-space: normal;
-  }
-}
-
 .container {
   min-height: 100%;
   /* background-image: url("../../assets/bg-hero.jpg"); */
-  background-color: #2f043ea4;
+  background-color: rgb(12,18,39);
   background-size: cover;
   width: 100%;
   position: relative;
   /* border: 10px solid orange; */
 }
 
+.background {
+  /* max-height: 1000px; */
+  padding: 10px 0 40px 0;
+  background-color: rgb(12,15,34);
+}
+
 .content {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   flex-wrap: wrap;
   width: 95%;
-  max-width: 1800px;
+  max-width: 1300px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 50px;
   /* border: 3px solid red; */
   row-gap: 30px;
   /* column-gap: fill; */
@@ -66,18 +54,15 @@ h3 {
 
 .header {
   /* border: 3px solid deeppink; */
-  /* background-color: rgba(219, 43, 66, 0.3); */
-  background-color: rgba(0, 0, 0, 0.5);
-  /* background-color: #db2b42; */
+  /* background-color: rgba(0, 0, 0, 0.5); */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 45px;
   width: 100%;
-  height: 100px;
-  /* gap: 1000px; */
+  height: 90px;
   padding: 0 20px;
-  gap: 50px;
+  /* gap: 50px; */
 }
 
 @media screen and (max-width: 330px) {
@@ -86,65 +71,59 @@ h3 {
   }
 }
 
-
-.navMenu {
-  display: flex;
-  justify-content: space-evenly;
-  /* border: 10px solid yellow; */
-  width: 100%;
-  max-width: 300px;
-  gap: 30px;
+.header h3 {
+  font-size: 1.9rem;
 }
 
 @media screen and (max-width: 700px) {
-  .navMenu {
-    flex-direction: column;
-    gap: 3px;
+  .header h3 {
+    font-size: 1.6rem;
+    white-space: nowrap;
   }
 }
 
-.searchBar {
+@media screen and (max-width: 500px) {
+  .header h3 {
+    font-size: 1.4rem;
+    white-space: normal;
+  }
+}
+
+
+.navMenu {
   display: flex;
-  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 300px;
+  margin: 30px auto;
+  /* border: 1px solid tomato; */
 }
 
-.searchIcon {
-  display: grid;
-  place-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: black;
-  height: 32px;
-  width: 30px;
+.actionBtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-input {
-  /* background-color: rgba(200, 100, 200, 0.4); */
-  border: none !important;
-  border-width: 0;
-  box-shadow: none;
-  height: 32px;
-  border-radius: 4px;
-  padding-left: 30px;
-}
-
-@media screen and (max-width: 610px) {
-  input {
-    max-width: 30px;
-  }
+.actionActiveBtn {
+  /* text-decoration: underline; */
+  padding-bottom: 5px;
+  border-bottom: 4px solid #e65b68;
 }
 
 .card {
   display: grid;
   place-items: start center;
+  /* border: 2px solid violet; */
 }
 
 .discoverBtn {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .discoverBtn button {
@@ -153,4 +132,5 @@ input {
   font-size: 1.2rem;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
+  cursor: pointer;
 }

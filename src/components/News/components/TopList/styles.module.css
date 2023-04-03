@@ -7,8 +7,18 @@
     padding: 8px;
 }
 
-/* eachReviewer query 600px
-flex direction column */
+@media screen and (max-width: 1500px) {
+    .eachReviewer {
+        gap: 50px;
+    }
+  }
+
+@media screen and (max-width: 650px) {
+    .eachReviewer {
+        gap: 0px;
+    }
+  }
+
 
 .reviewerLeft {
     display: flex;
