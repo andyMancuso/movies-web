@@ -8,10 +8,13 @@ import { MOVIES_TRAILERS } from "../../config/constants";
 
 const Theater = () => {
   const [currentTrailer, setCurrentTrailer] = useState(MOVIES_TRAILERS[0]);
+  const [isSelected, setIsSelected] = useState(MOVIES_TRAILERS[0])
 
   return (
     <div className={styles.container}>
-        <div className={styles.header}> in theater</div>
+        <div className={styles.header}> 
+          <h3>in theater</h3>
+        </div>
       <div className={styles.content}>
         <div className={styles.leftContent}>
           <div className={styles.videoContainer}>
@@ -26,6 +29,7 @@ const Theater = () => {
               allowfullscreen
             ></iframe>
           </div>
+          
           <div className={styles.trailerList}>
             {MOVIES_TRAILERS.map((item) => {
               return (
@@ -33,16 +37,22 @@ const Theater = () => {
                   title={item.title}
                   duration={item.duration}
                   img={item.img}
-                  onClick={() => setCurrentTrailer(item)}
+                  onClick={() => {setCurrentTrailer(item)
+                    // if (currentTrailer === item) {
+                    //   setIsSelected(currentTrailer)
+                    // }
+                  }}
                   key={item.title}
+                  currentTrailer={currentTrailer}
                   // data = {item}
                 />
               );
             })}
           </div>
         </div>
+
         <div className={styles.rightContent}>
-          <span className={styles.celebrities}>spotlight celebrities</span>
+            <h4>spotlight celebrities</h4>
           <div className={styles.actorList}>
             <Celebrity cast={currentTrailer.cast} />
           </div>

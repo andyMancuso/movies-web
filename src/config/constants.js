@@ -230,7 +230,7 @@ export const MOVIES_TRAILERS = [
     video: 'https://www.youtube.com/embed/-FsCwGj9aDw',
     title: 'The Flash',
     duration: '03:04',
-    img: 'https://m.media-amazon.com/images/M/MV5BMDFhZTc3NWQtY2UyZS00OGYzLTgxNTUtYjYxMjZjMmEyMjcwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
+    img: 'https://i.ytimg.com/vi/-FsCwGj9aDw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjGfBaVLWvXkqg9Nh2Tv8yj_1E0A',
     cast: [
       {
         img: 'https://m.media-amazon.com/images/M/MV5BMjE0NzM5MTc5OF5BMl5BanBnXkFtZTgwMjc3ODYxODE@._V1_QL75_UX140_CR0,1,140,207_.jpg',
@@ -258,7 +258,7 @@ export const MOVIES_TRAILERS = [
     video: 'https://www.youtube.com/embed/yjRHZEUamCc',
     title: 'John Wick: Chapter 4',
     duration: '01:30',
-    img: 'https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_.jpg',
+    img: 'https://i.ytimg.com/vi/yjRHZEUamCc/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLD6-8YQmPnkUmMLtaGwIWAThliGLw',
     cast: [
       {
         img: 'https://m.media-amazon.com/images/M/MV5BNGJmMWEzOGQtMWZkNS00MGNiLTk5NGEtYzg1YzAyZTgzZTZmXkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_QL75_UX140_CR0,1,140,207_.jpg',
@@ -286,7 +286,7 @@ export const MOVIES_TRAILERS = [
     video: 'https://www.youtube.com/embed/8zIf0XvoL9Y',
     title: 'Barbie',
     duration: '01:14',
-    img: 'https://m.media-amazon.com/images/M/MV5BMzQ3NTRjZDUtNGVhYS00OWQ0LTljMjEtYzJkOGJhYWViNjIxXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg',
+    img: 'https://i.ytimg.com/vi/8zIf0XvoL9Y/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAZEazt7EZD5I4pNSHE-p2HWzplwg',
     cast: [
       {
         img: 'https://m.media-amazon.com/images/M/MV5BMTgxNDcwMzU2Nl5BMl5BanBnXkFtZTcwNDc4NzkzOQ@@._V1_QL75_UY207_CR8,0,140,207_.jpg',
@@ -314,7 +314,7 @@ export const MOVIES_TRAILERS = [
     video: 'https://www.youtube.com/embed/bK6ldnjE3Y0',
     title: 'Oppenheimer',
     duration: '01:57',
-    img: 'https://m.media-amazon.com/images/M/MV5BZWI2YWU2ODItYzBmNi00Yjc2LWJlMDQtMGJlMmUxM2M3NzMxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg',
+    img: 'https://i.ytimg.com/vi/bEgpVTqWnqE/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAeeL9KOxjeO4lUrNuSU2xVXO_ChA',
     cast: [
       {
         img: 'https://m.media-amazon.com/images/M/MV5BMTUzMjg1NzIyOV5BMl5BanBnXkFtZTYwMzg2Mjgy._V1_QL75_UX140_CR0,0,140,207_.jpg',
