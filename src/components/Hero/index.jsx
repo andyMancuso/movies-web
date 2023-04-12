@@ -21,10 +21,10 @@ const Hero = () => {
             rated={movie.rated}
             release={releaseCalc(movie.release)}
             />
-            <span className={styles.playbtn}>
-             <Button>PLAY</Button>
+            <span className={styles.watchbtn}>
+             <Button>watch now</Button>
             </span>
-        </div>
+        </div>        
         <Cover src={movie.cover} />
       </div>
     </div>

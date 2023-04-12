@@ -16,32 +16,30 @@ const Header = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.left}>
+
       <Link className={styles.linkLogo} to="/">
         <img src={streamiaIMG} />
       </Link>
+        <nav className={styles.navMenu}>
+            <Link to="/movies">Movies</Link>
+            <Link to="/tvshows">TV Shows</Link>
+            <Link to="/mylist">My Lists</Link>
+        </nav>
+      </div>
       <div className={styles.right}>
-        <div className={styles.burgerMenu} onClick={handleMenuClick}>
+        {/* <div className={styles.burgerMenu} onClick={handleMenuClick}>
           <div className={styles.lines}></div>
           <div className={styles.lines}></div>
           <div className={styles.lines}></div>
         </div>
           {showMenu && (
           <nav className={styles.navMenu}>
-              <Link to="/">Home</Link>
               <Link to="/movies">Movies</Link>
               <Link to="/tvshows">TV Shows</Link>
               <Link to="/mylist">My Lists</Link>
           </nav> 
-          )}
-
-
-
-        {/* <nav className={styles.navigation}>
-          <Link to="/">Home</Link>
-          <Link to="/movies">Movies</Link>
-          <Link to="/tvshows">TV Shows</Link>
-          <Link to="/mylist">My Lists</Link>
-        </nav> */}
+          )} */}
         <Button>Log In</Button>
       </div>
     </div>

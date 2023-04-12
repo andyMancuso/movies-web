@@ -3,9 +3,7 @@ import styles from "./styles.module.css";
 const Cover = ({src}) => {
   return (
     <div className={styles.container}>
-      <img style={{
-        border: '3px solid white'
-      }}height='100%' width='100%' src={src} />
+      <img className={styles.coverIMG} src={src} />
     </div>
   )
 }

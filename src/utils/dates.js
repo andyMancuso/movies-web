@@ -8,7 +8,7 @@ export const durationCalc = (duration) => {
   const rHours = Math.floor(hours);
   const minutes = (hours - rHours) * 60;
   const rMinutes = Math.round(minutes);
-  return `${rHours} hs ${rMinutes} mins`;
+  return `${rHours}hs ${rMinutes}mins`;
 };
 
 export const releaseCalc = (release) => {

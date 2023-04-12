@@ -1,27 +1,53 @@
 .container {
   display: flex;
   width: 100%;
-  gap: 20px;
-  text-transform: uppercase;
-  justify-content: center;
-  margin-top: 10px;
+  gap: 30px;
+  justify-content: left;
+  margin-top: 7px;
+  margin-left: 5px;
+  /* border: 1px solid blue; */
 }
 
-.buttons {
-  background-color: rgba(200, 0, 0, 0.2);
-  border-radius: 16px;
-  width: fit-content;
+.buttonsContainer {
   display: flex;
+  text-transform: uppercase;
   align-items: center;
   gap: 8px;
-  padding: 10px;
-  color: white;
+  background: transparent;
+  border: none;
   font-size: 1.188rem;
-  text-shadow:
+  cursor: pointer;
+  /* color: #db2b42; */
+  /* text-shadow:
   -1px -1px 0 #000,
   1px -1px 0 #000,
   -1px 1px 0 #000,
-  1px 1px 0 #000;
+  1px 1px 0 #000; */
+}
+
+.buttonsIMG {
+  display: flex;
+  border: 2px solid #db2b42;
+  /* padding: 5px; */
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  /* background-color: pink; */
+}
+
+.buttonsIMG2{
+  display: flex;
+  border: 2px solid #db2b42;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+
+}
+
+.buttonsContainer h4 {
+  color: white;
+  /* color: #db2b42; */
 }
 
 

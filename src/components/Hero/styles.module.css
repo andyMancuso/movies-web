@@ -4,6 +4,8 @@
   background-size: cover;
   width: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
   /* border: 10px solid orange; */
 }
 
@@ -11,7 +13,8 @@
   content: '';
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(0, 0, 0, 0.6); */
+  background: linear-gradient(360deg, #0C1227, transparent 350%) ;
   position: absolute;
   left: 0;
   top: 0;
@@ -21,13 +24,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  margin-top: 200px;
+  margin: 70px auto;
   width: 95%;
   max-width: 1400px;
   gap: 40px;
   /* border: 3px solid blue; */
   position: relative;
+
 }
 @media screen and (max-width: 1000px) {
   .content{
@@ -46,8 +49,8 @@
   width: 100%;
   max-width: 700px;
   border-radius: 30px;
+  margin-top: 20px;
   /* border: 1px solid white; */
-  background: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -57,19 +60,23 @@
   }
 }
 
-.playbtn {
-  display: grid;
-  place-items: center;
+.watchbtn {
+  display: flex;
+  margin-top: 40px;
+  /* display: grid; */
+  /* place-items: center; */
 }
 
 /* borrar esta clase y hacerlo en componente a traves de props */
-.playbtn button {
-  padding: 12px 20px 12px 20px;
+.watchbtn button {
+  padding: 8px 10px 8px 10px;
   font-size: 22px;
-  margin-top: 20px;
-  margin-bottom: 10px;
   color: #fff;
-  background-color: #db2b42;
+  background: linear-gradient(180deg, #db2b42, transparent 250%);
+  /* border: 1px solid #db2b42; */
+  text-transform: uppercase;
+  box-shadow: 0px 0px 3px black;
+  cursor: pointer;
   /* text-shadow:
   -1px -1px 0 #000,
   1px -1px 0 #000,
@@ -78,7 +85,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .playbtn button{
+  .watchbtn button{
     font-size: 15px;
   }
 }
