@@ -1,21 +1,12 @@
 .container {
-    border-radius: 8px;
-    border: none;
-    padding: 10px 20px;
-    white-space: nowrap;
-    text-transform: capitalize;
+  padding: 8px 1em;
+  border-radius: 6px;
+  border: none;
+  font-size: 22px;
+  color: #fff;
+  background: linear-gradient(180deg, #db2b42, transparent 250%);
+  text-transform: uppercase;
+  box-shadow: 0px 0px 3px black;
+  cursor: pointer;
+  width: fit-content;
 }
-
-@media screen and (max-width: 600px) {
-    .container{
-        padding: 10px 5px;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .container{
-        padding: 10px 5px;
-        white-space: normal;
-    }
-}
-

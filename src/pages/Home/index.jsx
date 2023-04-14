@@ -1,4 +1,12 @@
-import { Section, Header, Discover, Hero, Theater, News } from "../../components";
+import {
+  Section,
+  Header,
+  Discover,
+  Hero,
+  Theater,
+  News
+} from "../../components";
+
 
 const Home = () => {
   return (

@@ -1,5 +1,5 @@
 
-import { Home } from './pages'
+import { Home, NotFound } from './pages'
 import {
   BrowserRouter,
   Link,
@@ -12,9 +12,11 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Home />} />
-    </Routes>
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+
+        <Route path='*' element={<NotFound />} />
+      </Routes>
     </BrowserRouter>
   )
 }

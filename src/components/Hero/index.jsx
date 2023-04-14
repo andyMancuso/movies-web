@@ -1,7 +1,7 @@
 import { Cover, Tags, Title, Actions, MetaData } from "./components/index";
 import Button from "../Button";
 import { MOVIES } from "../../config/constants";
-import { yearCalc, durationCalc, releaseCalc} from '../../utils/dates'
+import { yearCalc, durationCalc, releaseCalc } from "../../utils/dates";
 
 import styles from "./styles.module.css";
 
@@ -20,11 +20,10 @@ const Hero = () => {
             duration={durationCalc(movie.duration)}
             rated={movie.rated}
             release={releaseCalc(movie.release)}
-            />
-            <span className={styles.watchbtn}>
-             <Button>watch now</Button>
-            </span>
-        </div>        
+          />
+
+          <Button>watch now</Button>
+        </div>
         <Cover src={movie.cover} />
       </div>
     </div>

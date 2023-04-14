@@ -1,12 +1,14 @@
+import styles from "./styles.module.css";
 
-import styles from "./styles.module.css"
+const Button = ({ children, onClick }) => {
+  return (
+    <button
+      onClick={onClick}
+      className={styles.container}
+    >
+      {children}
+    </button>
+  );
+};
 
-const Button = ({children, onClick}) => {
-    return (
-      <div>
-        <button onClick={onClick} className={styles.container}>{children}</button>
-      </div>
-    )
-  }
-  
-  export default Button
+export default Button;
