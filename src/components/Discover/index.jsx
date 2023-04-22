@@ -3,18 +3,16 @@ import Button from "../Button";
 import Card from "./components/Card";
 
 import styles from "./styles.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ACTIONS = ["Random", "Popular", "Recent"];
 
 const Discover = () => {
   const [view, setView] = useState(ACTIONS[0]);
+  const [movies, setMovies] = useState(MOVIES)
 
-  const [movieQuantity, setMovieQuantity] = useState(10);
+  const [movieCount, setMovieCount] = useState(10);
   const [isAdding, setIsAdding] = useState(true);
-  console.log(isAdding);
-  console.log(movieQuantity);
-  console.log("this is movies lenght", MOVIES.length);
 
   const sortFn = (a, b) => {
     if (view === "Random") {
@@ -22,7 +20,11 @@ const Discover = () => {
     }
 
     if (view === "Popular") {
-      return b.stars - a.stars;
+      if (b.stars === a.stars) {
+        return b.release.localeCompare(a.release)
+      }
+
+      return b.stars - a.stars
     }
 
     if (view === "Recent") {
@@ -31,24 +33,29 @@ const Discover = () => {
   };
 
   const handleDiscover = () => {
-    if (isAdding) {
-      setMovieQuantity(movieQuantity + 5);
-      if (movieQuantity === 20) {
-        setIsAdding(false);
-      }
-    } else {
-      setMovieQuantity(movieQuantity - 5);
-    }
-    if (movieQuantity === 15) {
-      setIsAdding(true);
-    }
+    const offset = isAdding ? 5 : -5
+
+    const newCount = movieCount + offset
+
+    setMovieCount(newCount)
+
+    if (newCount === 10) setIsAdding(true)
+    if (newCount === 20) setIsAdding(false)
   };
+
+
+  useEffect(() => {
+    const sortedMovies = [...movies].sort(sortFn)
+    setMovies(sortedMovies)
+    setMovieCount(10)
+    setIsAdding(true)
+  }, [view])
+
 
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
-        <h3>Discover Movies</h3>
-      </div>
+      
+      <h3>Discover Movies</h3>
 
       <div className={styles.background}>
 
@@ -67,10 +74,9 @@ const Discover = () => {
         ))}
       </nav>
 
-        <div className={styles.content}>
-          {[...MOVIES]
-            .sort(sortFn)
-            .slice(0, movieQuantity)
+        <div className={styles.grid}>
+          {movies
+            .slice(0, movieCount)
             .map((item) => (
               <div key={item.title} className={styles.card}>
                 <Card

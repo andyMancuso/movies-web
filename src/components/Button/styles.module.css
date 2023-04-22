@@ -1,12 +1,20 @@
-.container {
-  padding: 8px 1em;
+.base {
   border-radius: 6px;
-  border: none;
   font-size: 22px;
   color: #fff;
+  cursor: pointer;
+}
+
+.primary {
+  padding: 8px 1em;
   background: linear-gradient(180deg, #db2b42, transparent 250%);
+  border: none;
   text-transform: uppercase;
   box-shadow: 0px 0px 3px black;
-  cursor: pointer;
-  width: fit-content;
+}
+
+.outline {
+  background-color: transparent;
+  border: 1px solid #999;
+  padding: 0px 10px;
 }

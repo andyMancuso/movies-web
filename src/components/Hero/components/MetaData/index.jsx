@@ -16,17 +16,24 @@ const MetaData = ({ stars, duration, rated, release }) => {
     <div className={styles.divider}></div>
       <div className={styles.dataContainer}>
          <h3>duration</h3>
-         {duration}
+          <span>
+            {duration}
+          </span>
       </div>
       <div className={styles.divider}></div>
       <div className={styles.dataContainer}>
           <h3>rated</h3>
-          {rated}
+          <span>
+            {rated}
+          </span>
       </div>
       <div className={styles.divider}></div>
       <div className={styles.dataContainer}>
-        <h3>release</h3> 
-        {release}</div>
+        <h3>release</h3>
+        <span>  
+          {release}
+        </span>
+      </div>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import { Cover, Tags, Title, Actions, MetaData } from "./components/index";
 import Button from "../Button";
 import { MOVIES } from "../../config/constants";
 import { yearCalc, durationCalc, releaseCalc } from "../../utils/dates";
+import { BsFillPlayFill, BsStarFill, BsShareFill } from "react-icons/bs";
 
 import styles from "./styles.module.css";
 
@@ -14,7 +15,22 @@ const Hero = () => {
         <div className={styles.info}>
           <Tags categories={movie.categories} />
           <Title title={movie.title} year={yearCalc(movie.release)} />
-          <Actions />
+          
+          <div className={styles.actionsContainer}>
+          <Actions
+            title={'watch trailer'}
+            icon={<BsFillPlayFill color="#db2b42" size={26} style={{ marginRight: -2 }} />}
+          />
+          <Actions
+            title={'add favorite'}
+            icon={<BsStarFill color="#db2b42" size={18} style={{ marginTop: -1 }} />}
+          />
+          <Actions
+            title={'share'}
+            icon={<BsShareFill color="#db2b42" size={18} style={{ marginRight: 2 }} />}
+          />
+          </div>
+
           <MetaData
             stars={movie.stars}
             duration={durationCalc(movie.duration)}
@@ -22,7 +38,9 @@ const Hero = () => {
             release={releaseCalc(movie.release)}
           />
 
-          <Button>watch now</Button>
+          <span className={styles.watchbtn}>
+            <Button>watch now</Button>
+          </span>
         </div>
         <Cover src={movie.cover} />
       </div>

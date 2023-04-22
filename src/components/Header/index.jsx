@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Button from "../Button";
 import SideMenu from "./SideMenu";
 import streamiaIMG from "../../assets/logo.png";
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { AiOutlineClose } from 'react-icons/ai'
 
 import styles from "./styles.module.css";
 
@@ -36,11 +38,16 @@ const Header = () => {
         <Button>Log In</Button>
       </div>
 
-      <button className={styles.menu} onClick={showMenu ? closeMenu : openMenu}>
-        {showMenu ? "X" : "Menu"}
-      </button>
-
-      {/* conditional rendering */}
+      <Button
+        variant='outline'
+        onClick={showMenu ? closeMenu : openMenu}
+        className={styles.btnMenu}
+      >
+        {showMenu
+          ? <AiOutlineClose size={22} style={{color: 'white', marginTop: '7px'}} />
+          : <GiHamburgerMenu size={22} style={{marginTop: '8px'}}  />
+        }
+      </Button>
 
       {showMenu && <div className={styles.background} />}
 

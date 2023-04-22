@@ -8,15 +8,18 @@ import { MOVIES_TRAILERS } from "../../config/constants";
 
 const Theater = () => {
   const [currentTrailer, setCurrentTrailer] = useState(MOVIES_TRAILERS[0]);
-  const [isSelected, setIsSelected] = useState(MOVIES_TRAILERS[0])
+  const [isSelected, setIsSelected] = useState(MOVIES_TRAILERS[0]);
 
   return (
     <div className={styles.container}>
-        <div className={styles.header}> 
-          <h3>in theater</h3>
-        </div>
       <div className={styles.content}>
+
         <div className={styles.leftContent}>
+          <div className={styles.header}>
+            <h3>in theater</h3>
+          </div>
+
+          <div style={{ display: "flex", width: '100%'}}>
           <div className={styles.videoContainer}>
             <iframe
               className={styles.videoPlayer}
@@ -27,9 +30,9 @@ const Theater = () => {
               title="YouTube video player"
               frameborder="0"
               allowfullscreen
-            ></iframe>
+            />
           </div>
-          
+
           <div className={styles.trailerList}>
             {MOVIES_TRAILERS.map((item) => {
               return (
@@ -37,7 +40,8 @@ const Theater = () => {
                   title={item.title}
                   duration={item.duration}
                   img={item.img}
-                  onClick={() => {setCurrentTrailer(item)
+                  onClick={() => {
+                    setCurrentTrailer(item);
                     // if (currentTrailer === item) {
                     //   setIsSelected(currentTrailer)
                     // }
@@ -49,14 +53,16 @@ const Theater = () => {
               );
             })}
           </div>
+          </div>
         </div>
 
         <div className={styles.rightContent}>
-            <h4>spotlight celebrities</h4>
+          <h4>spotlight celebrities</h4>
           <div className={styles.actorList}>
             <Celebrity cast={currentTrailer.cast} />
           </div>
         </div>
+
       </div>
     </div>
   );

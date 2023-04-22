@@ -9,31 +9,22 @@
   display: flex;
   text-transform: uppercase;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   background: transparent;
   border: none;
   font-size: 1.188rem;
   cursor: pointer;
 }
 
-.buttonsIMG {
-  display: flex;
-  border: 2px solid #db2b42;
-  /* padding: 5px; */
-  border-radius: 100%;
-  align-items: center;
-  justify-content: center;
-  /* background-color: pink; */
-}
-
-.buttonsIMG2{
-  display: flex;
+.iconContainer{
   border: 2px solid #db2b42;
   border-radius: 100%;
-  align-items: center;
-  justify-content: center;
-  padding: 6px;
+  display: grid;
+  place-items: center;
 
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
 }
 
 .buttonsContainer h4 {

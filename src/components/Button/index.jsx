@@ -1,10 +1,19 @@
 import styles from "./styles.module.css";
 
-const Button = ({ children, onClick }) => {
+
+const Button = ({
+  children,
+  onClick,
+  variant = 'primary',
+  className
+}) => {
+
+  const currentStyles = styles[variant]
+
   return (
     <button
       onClick={onClick}
-      className={styles.container}
+      className={`${styles.base} ${currentStyles} ${className}`}
     >
       {children}
     </button>

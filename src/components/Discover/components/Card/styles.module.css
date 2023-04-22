@@ -55,14 +55,14 @@
   color: #db2b42;
   margin-top: 8px;
   text-transform: capitalize;
-  font-size: .7rem;
+  font-size: 0.875rem;
   position: relative;
   /* white-space: nowrap; */
 }
 
 .title {
   margin-top: 3px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   position: relative;
   font-weight: 400;
 }
