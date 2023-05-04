@@ -7,7 +7,10 @@ const News = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.wrapper}>
+      <h2>news</h2>
       <div className={styles.content}>
+
         <div className={styles.leftContent}>
           <div className={styles.reviewersList}>
             <h3>Top Reviewers</h3>
@@ -104,12 +107,13 @@ const News = () => {
                 <span>2 hours ago - by Rob</span>
                 <h4>
                   Brie Larson is already getting into character for captain
-                  marvel, check it out
+                  marvel
                 </h4>
               </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

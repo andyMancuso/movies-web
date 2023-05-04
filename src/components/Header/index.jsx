@@ -22,6 +22,8 @@ const Header = () => {
       className={styles.container}
       style={{ backgroundColor: showMenu ? "black" : "rgba(0, 0, 0, .6)" }}
     >
+      <div className={styles.content}>
+
       <div className={styles.left}>
         <Link className={styles.linkLogo} to="/">
           <img src={streamiaIMG} />
@@ -53,6 +55,8 @@ const Header = () => {
 
       <SideMenu isOpen={showMenu} />
       {/* {showMenu && <SideMenu isOpen={showMenu} />} */}
+      </div>
+
     </div>
   );
 };

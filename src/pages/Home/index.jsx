@@ -4,7 +4,8 @@ import {
   Discover,
   Hero,
   Theater,
-  News
+  News,
+  Footer
 } from "../../components";
 
 
@@ -29,6 +30,7 @@ const Home = () => {
       <Section>
         <News />
       </Section>
+        <Footer />
     </div>
   );
 };

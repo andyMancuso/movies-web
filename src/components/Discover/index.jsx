@@ -43,7 +43,6 @@ const Discover = () => {
     if (newCount === 20) setIsAdding(false)
   };
 
-
   useEffect(() => {
     const sortedMovies = [...movies].sort(sortFn)
     setMovies(sortedMovies)
@@ -54,47 +53,56 @@ const Discover = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.content}>
       
-      <h3>Discover Movies</h3>
+        <h3>Discover Movies</h3>
 
-      <div className={styles.background}>
+        <div className={styles.background}>
 
-      <nav className={styles.navMenu}>
-        {ACTIONS.map((action) => (
-          <button
-            key={action}
-            onClick={() => setView(action)}
-            className={`
-              ${styles.actionBtn}
-              ${view === action ? styles.actionActiveBtn : ""}
-            `}
-          >
-            {action}
-          </button>
-        ))}
-      </nav>
+        <nav className={styles.navMenu}>
+          {ACTIONS.map((action) => (
+            <button
+              key={action}
+              onClick={() => setView(action)}
+              className={`
+                ${styles.actionBtn}
+                ${view === action ? styles.actionActiveBtn : ""}
+              `}
+            >
+              {action}
+            </button>
+          ))}
+           <div
+              className={styles.actionUnderline}
+              style={{
+                transform: `translateX(${ACTIONS.indexOf(view) * 165}%)`
+              }}
+            >  
+            </div>
+        </nav>
 
-        <div className={styles.grid}>
-          {movies
-            .slice(0, movieCount)
-            .map((item) => (
-              <div key={item.title} className={styles.card}>
-                <Card
-                  title={item.title}
-                  img={item.cover}
-                  stars={item.stars}
-                  year={item.release}
-                  tags={item.categories}
-                />
-              </div>
-            ))}
+          <div className={styles.grid}>
+            {movies
+              .slice(0, movieCount)
+              .map((item) => (
+                <div key={item.title} className={styles.card}>
+                  <Card
+                    title={item.title}
+                    img={item.cover}
+                    stars={item.stars}
+                    year={item.release}
+                    tags={item.categories}
+                  />
+                </div>
+              ))}
+          </div>
+
+          <span className={styles.discoverBtn}>
+            <Button onClick={handleDiscover}>
+              {isAdding ? "discover more" : "discover less"}
+            </Button>
+          </span>
         </div>
-
-        <span className={styles.discoverBtn}>
-          <Button onClick={handleDiscover}>
-            {isAdding ? "discover more" : "discover less"}
-          </Button>
-        </span>
       </div>
     </div>
   );

@@ -2,20 +2,51 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  /* height: 100%; */
   justify-content: center;
   align-items: center;
-  background-color: rgb(29, 36, 61);
+  background-color: #0c1227;
+  position: relative;
+  /* border: 1px solid orange; */
+}
+
+.container::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  /* background: rgba(0, 0, 0, 0.6); */
+  background: linear-gradient(360deg, black, transparent 15%);
+  /* background-color: orange; */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  height: 100%;
+  width: 100%;
+  max-width: 1240px;
+  gap: 55px;
+  /* border: 1px solid blue; */
+}
+
+.wrapper h2 {
+  font-size: 1.9rem;
+  text-align: left;
+  margin-top: 30px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #abacb3;
+  padding-bottom: 10px;
 }
 
 .content {
   display: flex;
   width: 100%;
-  max-width: 1800px;
-  height: 100%;
-  border: 5px solid springgreen;
-  /* margin: 0 auto; */
+  /* border: 1px solid springgreen; */
   align-items: center;
-  justify-content: space-around;
   gap: 50px;
   /* max-height: 800px; */
   /* margin-top: 200px; */
@@ -34,10 +65,11 @@
   flex-direction: column;
   /* justify-content: space-between; */
   width: 100%;
-  max-width: 360px;
+  max-width: 300px;
   /* border: 3px solid darkorange; */
-  row-gap: 60px;
+  row-gap: 30px;
   /* max-height: 800px; */
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -61,17 +93,19 @@
 }
 
 .leftContent h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   /* margin-bottom: 15px; */
 }
 
 .leftContent h3 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .reviewersList{
   display: flex;
+  width: 100%;
+  max-width: 320px;
   flex-direction: column;
   /* border: 2px solid purple; */
   gap: 12px;
@@ -95,6 +129,8 @@
 .fandomList{
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 320px;
   gap: 12px;
 }
 
@@ -116,14 +152,15 @@
 .rightContent {
   display: flex;
   flex-direction: column;
-  /* border: 5px solid skyblue; */
+  /* border: 1px solid #abacb3; */
   width: 100%;
-  max-width: 1120px;
-  gap: 35px;
-  padding: 30px 0 50px 30px;
-  background-color: #0c1227;
+  max-width: 890px;
+  gap: 40px;
+  padding: 30px 30px 50px 30px;
+  background-color: rgb(29, 36, 61);
   /* max-height: 800px; */
-  border-radius: 5px;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, .5); */
 }
 
 @media screen and (max-width: 1500px) {
@@ -140,10 +177,10 @@
   display: flex;
   /* flex-direction: column; */
   width: 100%;
-  max-width: 1200px;
+  max-width: 850px;
   /* border: 2px solid purple; */
   /* align-items: center; */
-  gap: 25px;
+  gap: 20px;
   /* padding: 20px; */
 }
 
@@ -155,21 +192,24 @@
 
 .bigImgContainer {
   display: flex;
+  /* width: 100%; */
+  height: 100%;
   width: 100%;
-  /* height: 100%; */
-  max-width: 590px;
-  /* max-height: 900px; */
-  border: 1px solid mediumspringgreen;
+  max-width: 1200px;
+  /* max-width: 700px; */
+  /* max-height: 800px; */
+  /* border: 1px solid mediumspringgreen; */
 }
 
 .mainNotice img {
   display: flex;
   width: 100%;
   height: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
   /* max-width: 500px; */
   /* max-height: 800px; */
   /* height: 400px; */
-  border-radius: 15px;
   /* border: 1px solid rgba(255, 255, 255, 0.2); */
 }
 
@@ -177,26 +217,27 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 410px;
-  gap: 15px;
+  max-width: 350px;
+  gap: 10px;
   text-indent: 0;
   /* border: 2px solid violet; */
-  margin-top: 15px;
-}
-
-.mainNoticeData span {
-  font-size: .820rem;
-  font-weight: 300;
+  /* margin-top: 15px; */
 }
 
 .mainNoticeData h3 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: rgb(59, 183, 152);
   /* border: 1px solid white; */
 }
 
+.mainNoticeData span {
+  font-size: .75rem;
+  font-weight: 300;
+}
+
+
 .mainNoticeData p {
-  font-size: .875rem;
+  font-size: .8rem;
   font-weight: 200;
   max-width: 470px;
   /* border: 1px solid orange; */
@@ -208,23 +249,33 @@
   white-space: nowrap;
   background-color: transparent;
   border: none;
-  margin-left: 5px;
+  /* margin-left: px; */
   cursor: pointer;
 }
+
 
 .mainNoticeData h4 {
   font-size: 1rem;
   /* margin-left: 5px; */
   font-weight: 200;
   text-transform: capitalize;
-  border-bottom: 2px solid rgba(181, 84, 84, 0.641);
+  /* border-bottom: 2px solid rgba(181, 84, 84, 0.641); */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.641);
   /* border: 1px solid turquoise; */
-  padding-bottom: 8px;
-  padding-left: 2px;
-  margin-top: 15px;
-  margin-left: 5px;
+  padding-bottom: 5px;
+  /* padding-left: 1px; */
+  /* margin-top: 15px; */
+  /* margin-left: 5px; */
   background-color: transparent;
   color: white;
+  transition: all 300ms ease;
+}
+
+.mainNoticeData button h4:hover {
+  /* padding-bottom: 4px; */
+  border-bottom: 2px solid rgb(59, 183, 152);
+  /* color: #abacb3; */
+  font-weight: 200;
 }
 
 .smallNoticesContainer {
@@ -233,10 +284,11 @@
   grid-template-columns: repeat(3, 1fr); */
   /* place-items: center; */
   width: 100%;
-  max-width: 1010px;
+  height: 100%;
+  max-width: 850px;
   /* border: 2px solid orange; */
   /* justify-content: space-between; */
-  gap: 50px;
+  gap: 35px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -271,12 +323,12 @@
 }
 
 .smallNoticeData span {
-  font-size: .820rem;
+  font-size: .75rem;
   font-weight: 300;
 }
 
 .smallNoticeData h4 {
-  font-size: 1.1rem;
+  font-size: .975rem;
   color: rgb(59, 183, 152);
   text-transform: capitalize;
 }
@@ -284,22 +336,23 @@
 .imgContainer {
   display: flex;
   width: 100%;
-  height: 100%;
-  max-height: 180px;
   max-width: 315px;
+  /* height: 100%; */
+  /* max-height: 180px; */
   /* height: 190px; */
-  border: 2px solid springgreen;
+  /* border: 2px solid springgreen; */
   /* justify-content: center; */
 }
 
 .imgContainer img {
   width: 100%;
   height: 100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
   /* width: 300px; */
   /* height: 190px; */
   border-radius: 5px;
   object-fit: cover;
-  /* aspect-ratio: 4/3; */
+  aspect-ratio: 16/9;
 }
 
 .smallNotices img {

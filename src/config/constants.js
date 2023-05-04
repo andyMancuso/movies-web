@@ -338,6 +338,34 @@ export const MOVIES_TRAILERS = [
       }
     ]
   },
+  {
+    video: 'https://www.youtube.com/embed/vS3_72Gb-bI',
+    title: 'Blue Beetle',
+    duration: '02:50',
+    img: 'https://i.ytimg.com/vi/Shmvk5M-NV8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAJxnW2aBzRIGgnjdq5Q8r1fl498A',
+    cast: [
+      {
+        img: 'https://m.media-amazon.com/images/M/MV5BM2IyYmE3NjktZTRjYi00YWE3LWIwYjgtOTg1MGZmMmY1ZDA2XkEyXkFqcGdeQXVyODMyNDA5NTQ@._V1_QL75_UY207_CR10,0,140,207_.jpg',
+        name: 'Susan Sarandon',
+        role: 'Actress'
+      },
+      {
+        img: 'https://m.media-amazon.com/images/M/MV5BNTBiYzNmZmYtZWIyYi00MjQ3LTk0ZTAtNWE3ODUyMTljZDA3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UY207_CR1,0,140,207_.jpg',
+        name: 'Xolo Maridueña',
+        role: 'Actor'
+      },
+      {
+        img: 'https://m.media-amazon.com/images/M/MV5BNzIzYWJjNzYtNmUwMi00NTJmLTlkNjItMzM5M2U1YzkzNWFjXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UY207_CR10,0,140,207_.jpg',
+        name: 'Raoul Max Trujillo',
+        role: 'Actor'
+      },
+      {
+        img: 'https://m.media-amazon.com/images/M/MV5BNjUxYjViMTYtZWZkOS00MzVjLTk4MmYtNTcyMzdjYzQ3NWNhXkEyXkFqcGdeQXVyNzY4MDEyMDI@._V1_QL75_UX140_CR0,1,140,207_.jpg',
+        name: 'Harvey Guillén',
+        role: 'Actor'
+      }
+    ]
+  }
 
 ]
 
@@ -373,26 +401,26 @@ export const FANDOM = [
   {
     name: 'Potterheads',
     score: '7532',
-    img: 'https://randomuser.me/api/portraits/women/65.jpg'
+    img: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/3c/3c2edf40be86cb3009833739e919da06e41cc340_full.jpg'
   },
   {
     name: 'Ringers',
     score: '5231',
-    img: 'https://randomuser.me/api/portraits/women/65.jpg'
+    img: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/02/026d35d0e53cb4745799f756d3f138668365aa0a_full.jpg'
   },
   {
     name: 'Gladers',
     score: '3874',
-    img: 'https://randomuser.me/api/portraits/women/65.jpg'
+    img: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/8c/8c7b7cb583c070c0aaa04701fb14086c2c5fe88f_full.jpg'
   },
   {
     name: 'Avatards',
     score: '2643',
-    img: 'https://randomuser.me/api/portraits/women/65.jpg'
+    img: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/f2/f2afcbfaebfe8f9ea282aaa4cac559aae3ddcdfb_full.jpg'
   },
   {
     name: 'Batmaniacs',
     score: '2340',
-    img: 'https://randomuser.me/api/portraits/women/65.jpg'
+    img: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/ed/ed43ab7d0b37e34c2913a09059093992bbb128e9_full.jpg'
   }
 ]
